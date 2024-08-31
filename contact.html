@@ -3,23 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Resources</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="WhatsApp Image 2024-08-30 at 23.51.15_908192bd.jpg">
 </head>
 <body>
     <header>
-        <h1>Farmers Market</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resources.html">Resources</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html"><b><i><u>Contact</u></i></b></a>
-            <a href="login.html">Login</a>
+        <div style="background-color: black; margin:0%">
+            <h1 style="font-size: 100px; margin-top: 0px; margin-bottom: 0px; font-family: Arial, Helvetica, sans-serif;">Farmigo</h1>
+        </div>
+        <nav style="padding: 1%;">
+            <a href="index.html" style="margin-right: 10%;">Home</a>
+            <a href="resources.html" style="margin-right: 10% ;">Merchandise</a>
+            <a href="about.html" style="margin-right: 10%;">About Us</a>
+            <a href="contact.html" style="margin-right: 10%;"><u><i><b>Contact</b></i></u></a>
+            <a href="login.html" style="margin-right: 10%;">Login</a>
         </nav>
     </header>
-
-
+    <div class="content" style="background-color: #ddf2d1; margin-top: 0%; ">
+        <center><h2 style="font-size: xx-large;">Contact Us</h2></center>
+    <center><div class="contact-info" style="border-style: solid; border-color: rgb(4,62,4); margin-left: 10%; margin-right: 10%;">
+             <strong>Phone:</strong> 1-800-123-4567</br>
+             <strong>Email:</strong> <a href="mailto:support@farmigo.com">support@farmigo.com</a></br>
+            <strong>Mailing Address:</strong> 
+             Farmigo<br>123 Greenfield Lane<br>Farmville, TX 78901
+             <form action="/submit-contact" method="post">
+                <div class="name">
+                <p><label for="name">Name:</label></p>
+                <input type="text" id="name" name="name" required>
+                
+                <p><label for="email">Email:</label></p>
+                <input type="email" id="email" name="email" required>
+                
+                <p><label for="phone">Phone (Optional):</label></p>
+                <input type="tel" id="phone" name="phone">
+                
+                <p><label for="subject">Subject:</label></p>
+                <input type="text" id="subject" name="subject" required>
+                
+                <p><label for="message">Message:</label></p>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                </form><br>
+                <button type="submit">Submit</button> 
+            </div>
+        </div></center>
+        <div class="social-media">
+            <p><strong>Follow us on social media:</strong></p>
+            <p>
+                <a href="https://facebook.com/FarmigoFB" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/Farmigo" target="_blank">Twitter</a> |
+                <a href="https://instagram.com/FarmigoIG" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="hours">
+            <p><strong>Office Hours:</strong></p>
+            <p>Monday - Friday: 8 AM - 6 PM</p>
+            <p>Saturday: 9 AM - 1 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
     
 </body>
 </html>
