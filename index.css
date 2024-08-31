@@ -31,7 +31,12 @@ nav a:hover {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    cursor: grabbing;
 
+}
+
+.hero:hover{
+    transform: scale(1.02);
 }
 
 .hero {
@@ -74,4 +79,59 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+.dabba {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; 
+    margin-top:3%;
+    margin-left: 10%;
+    margin-right: 5%;
+    gap: 10px;
+    padding: 10px; 
+}
+
+.item12 {
+    flex: 1 1 calc(30% - 20px); 
+    box-sizing: border-box;
+    height: 200px; 
+    background-color: rgb(4, 62, 4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: grab;
+    
+}
+.item12:hover {
+    transform: scale(1.1);
+}
+
+.des:hover{
+    transform: scale(1.02);
+}
+
+.contact-info{
+    background-color: white;
+    border-radius: 4%;
+    font-size: x-large;
+    margin-top: 0%;
+    
+}
+
+.name{
+    font-size: x-large;
+}
+
+.content{
+    background-color: #ddf2d1;
+}
+
+.content{
+    #h2{
+        background-color: #ddf2d1;
+        margin-block-start: 0%;
+        margin-block-end: 0%;
+    }
 }
