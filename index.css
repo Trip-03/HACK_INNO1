@@ -9,8 +9,11 @@ body {
 header {
     background: #4CAF50;
     color: white;
-    padding: 20px 0;
+    /* padding: 20px; */
     text-align: center;
+    margin: top 0;
+    margin:0%;
+    border-top: 0px;
 }
 
 nav a {
