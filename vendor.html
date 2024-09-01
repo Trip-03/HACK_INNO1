@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendorstyle.css">
+    <title>Vendor Goods Request</title>
+</head>
+<body>
+    <div class="vendor">
+        <h1>Vendor Goods Request Form</h1>
+        <form id="vendor-form" action="#" method="post">
+            <div class="form-group">
+                <label for="vendor-name">Vendor Name:</label>
+                <input type="text" id="vendor-name" name="vendor_name" required>
+            </div>
+            <div class="form-group">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company_name">
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="product-needed">Product Needed:</label>
+                <input type="text" id="product-needed" name="product_needed" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity-needed">Quantity Needed (in kg):</label>
+                <input type="number" id="quantity-needed" name="quantity_needed" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget(₹):</label>
+                <input type="number" id="budget" name="budget" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-info">Contact Information:</label>
+                <input type="tel" id="contact-info" name="contact_info" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('vendor-form').addEventListener('submit', function(event) {
+            const formGroups = document.querySelectorAll('.form-group');
+            formGroups.forEach(group => group.classList.remove('error', 'success'));
+
+            let isValid = true;
+
+            formGroups.forEach(group => {
+                const input = group.querySelector('input');
+                if (input && input.value.trim() === '') {
+                    group.classList.add('error');
+                    isValid = false;
+                } else if (input) {
+                    group.classList.add('success');
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault();
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>
+vendor html
