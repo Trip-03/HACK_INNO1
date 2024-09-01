@@ -102,6 +102,7 @@ footer {
     justify-content: center;
     font-size: 1.5em;
     cursor: grab;
+    border-radius: 2%;
     
 }
 .item12:hover {
@@ -116,7 +117,10 @@ footer {
     background-color: white;
     border-radius: 4%;
     font-size: x-large;
-    margin-top: 0%;
+    margin-top: 2%;
+    padding-top: 2%;
+    border-radius: 3%;
+    padding-bottom: 2%;
     
 }
 
@@ -124,14 +128,6 @@ footer {
     font-size: x-large;
 }
 
-.content{
-    background-color: #ddf2d1;
-}
-
-.content{
-    #h2{
-        background-color: #ddf2d1;
-        margin-block-start: 0%;
-        margin-block-end: 0%;
-    }
+.zone{
+    background-color: black;
 }
