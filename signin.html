@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             height: 100vh;
             margin: 0;
         }
+
         .container {
             background: rgba(0, 0, 0, 0.9);
             padding: 30px;
@@ -23,21 +25,25 @@
             width: 350px;
             transition: transform 0.3s ease;
         }
+
         .container:hover {
             transform: scale(1.05);
         }
+
         .container h2 {
             margin-bottom: 20px;
             font-size: 24px;
             color: #ffffff;
             text-align: center;
         }
+
         .container label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
             color: #ffffff;
         }
+
         .container input[type="text"],
         .container input[type="password"] {
             width: 100%;
@@ -48,14 +54,17 @@
             box-sizing: border-box;
             transition: border-color 0.3s ease;
         }
+
         .container input[type="text"]:focus,
         .container input[type="password"]:focus {
             border-color: #007BFF;
             outline: none;
         }
+
         .container input[type="checkbox"] {
             margin-right: 10px;
         }
+
         .container button {
             width: 100%;
             padding: 12px;
@@ -67,15 +76,18 @@
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         .container button:hover {
             background-color: #0056b3;
             transform: scale(1.02);
         }
+
         .container button:active {
             transform: scale(0.98);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>Log In</h2>
@@ -86,13 +98,20 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-            <div>
+            <div style="display: flex;padding-bottom: 3%;">
                 <input type="checkbox" id="staySignedIn" name="staySignedIn">
                 <label for="staySignedIn">Stay signed in</label>
             </div>
 
             <button type="submit">Log In</button>
+    </div>
+    <div class="zone" style="display: grid; background-color: rgb(16, 15, 15); height: 50%;border-radius: 2%;padding: 2%;margin-left: 4%;" >
+        <p style="color: white;text-align: center;font-size: xx-large;">Follow the following link to enter your Zone!</p>
         </form>
+        <div style="text-align: center; background-color: white;border-radius: 2%; margin: 1%;padding-top: 5%;"><a href="farmer.html">Click on the link to enter into the farmer zone.</a></div>
+        <div style="text-align: center;background-color: white;border-radius: 2%;margin: 1%;padding-top: 5%"><a href="vendor.html">Click on the link to enter into the vendor zone.</a></div>
+        <div style="text-align: center;background-color: white;border-radius: 2%;margin: 1%;padding-top: 5%;"><a href="supplier.html">Click on the link to enter into the Agricultural Products Supplier zone.</a></div>
     </div>
 </body>
+
 </html>
